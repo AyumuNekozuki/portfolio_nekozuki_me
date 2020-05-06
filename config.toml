@@ -24,8 +24,8 @@ licenseURL = "https://creativecommons.org/licenses/by-nd/4.0/deed.ja"
 themeColor = "#24292E"
 
 ## Set custom CSS and/or JS to override site defaults.
-customCss = ["css/blog.css"]
-customJs = ["js/blog.js"]
+customCss = ["/css/blog.css"]
+customJs = ["/js/blog.js"]
 
   ## Set as many as you want.
   [[params.socialIcons]]
