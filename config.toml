@@ -1,4 +1,4 @@
-baseURL = "https://portfolio.nekozuki.me"
+baseURL = "https://portfolio.nekozuki.me/"
 languageCode = "ja"
 title = "Ayumu Nekozuki"
 theme = "soho"
