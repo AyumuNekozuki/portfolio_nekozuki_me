@@ -1,0 +1,85 @@
+baseURL = "https://portfolio.nekozuki.me"
+languageCode = "ja"
+title = "Ayumu Nekozuki"
+theme = "soho"
+
+enableInlineShortcodes = true 
+
+summarylength = 10 
+enableEmoji = true
+
+[ params ]
+ author = "猫月あゆむ"
+ description = "" 
+
+## Set one of:
+gravatar = "ikkaitube@gmail.com"
+# profilePicture = "images/profile.png"
+
+copyright = "AyumuNekozuki"
+license = " CC BY-ND 4.0 "
+licenseURL = "https://creativecommons.org/licenses/by-nd/4.0/deed.ja" 
+
+## Set custom theme color.
+themeColor = "#24292E"
+
+## Set custom CSS and/or JS to override site defaults.
+customCss = ["css/blog.css"]
+customJs = ["js/blog.js"]
+
+  ## Set as many as you want.
+  [[params.socialIcons]]
+  icon = "fa-github"
+  title = "GitHub"
+  url = "https://github.com/AyumuNekozuki/portfolio_nekozuki_me"
+
+[menu]
+
+  [[menu.main]]
+  name = "History"
+  weight = 100
+  identifier = "history"
+  url = "/history"
+
+  [[menu.main]]
+  name = "Makes"
+  identifier = "makes"
+  weight = 200
+  url = "https://nekozuki.me/makes"
+
+  [[menu.main]]
+  name = "Portal site"
+  identifier = "portal"
+  weight = 400
+  url = "https://nekozuki.me"
+
+  [[menu.main]]
+  name = "Blog"
+  identifier = "blog"
+  weight = 500
+  url = "https://blog.nekozuki.me"
+
+  [[menu.main]]
+  name = "Portal site"
+  identifier = "portal"
+  weight = 600
+  url = "https://nekozuki.me"
+
+  [[menu.main]]
+  name = "About"
+  identifier = "about"
+  weight = 700
+  url = "/about"
+
+[markup]
+
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true # if false, you need to provide you own custom CSS
+  style = "monokai"
+  tabWidth = 4
