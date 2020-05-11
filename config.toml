@@ -36,15 +36,21 @@ customJs = ["/js/blog.js"]
 [menu]
 
   [[menu.main]]
-  name = "History"
+  name = "Skils"
+  identifier = "skils"
   weight = 100
+  url = "/skils"
+
+  [[menu.main]]
+  name = "History"
+  weight = 200
   identifier = "history"
   url = "/history"
 
   [[menu.main]]
   name = "Makes"
   identifier = "makes"
-  weight = 200
+  weight = 300
   url = "https://nekozuki.me/makes"
 
   [[menu.main]]
