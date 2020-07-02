@@ -93,3 +93,6 @@ customJs = ["/js/blog.js"]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[blackfriday]
+  smartypants = false
