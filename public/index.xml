@@ -28,9 +28,18 @@
       <pubDate>Wed, 06 May 2020 08:02:41 +0900</pubDate>
       
       <guid>https://portfolio.nekozuki.me/history/</guid>
-      <description>学歴 2018/04/01 - 鹿児島県立武岡台高等学校 入学
-2019/04/01 - 角川ドワンゴ学園N高等学校 転入学
-現在 N高等学校 第３学年 在籍中</description>
+      <description>学歴    年月 学校名     2018/04 鹿児島県立武岡台高等学校 入学   2019/04 角川ドワンゴ学園N高等学校 転入学    現在 N高等学校 第３学年 在籍中</description>
+    </item>
+    
+    <item>
+      <title>Skils</title>
+      <link>https://portfolio.nekozuki.me/skils/</link>
+      <pubDate>Wed, 06 May 2020 08:02:41 +0900</pubDate>
+      
+      <guid>https://portfolio.nekozuki.me/skils/</guid>
+      <description>2020年5月11日時点の情報です。
+当ページでは、当人の技能レベルについて説明します。
+ これまでの制作物については こちら 検定等の資格所持については こちら   HTML5 ★★★★☆  基本的な静的Webページ構築ができる。 canvasなど一部触れたことのない要素もある。  CSS3 ★★☆☆☆  基本的な静的Webページデザインができる。 2カラム以上のデザインはできるが、細かな調整に苦手意識を持つ。 グリッドレイアウトは未経験。  JavaScript ★★★☆☆  基本的な動作（ループや条件分岐など）が書けるレベル。 趣味としてだがブラウザ拡張機能の制作経験あり。 ブラウザ拡張機能の制作経験もあり、DOM操作が得意。 jQuery/node.</description>
     </item>
     
   </channel>
