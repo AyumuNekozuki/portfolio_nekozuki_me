@@ -1,0 +1,404 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 15px, #EFEFFF 0, #EFEFFF 30px);
+  border: 20px solid #7f7fff;
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+.fa-brands, .fab {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400 !important;
+}
+
+.fa-solid, .fas {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+
+a {
+  color: #7f7fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+section {
+  -webkit-box-shadow: 0 0 3px #7f7fff;
+          box-shadow: 0 0 3px #7f7fff;
+  background: white;
+  max-width: 600px;
+  width: calc(100% - 20px);
+  margin: 2rem auto 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+section .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5rem;
+}
+
+section .header h2 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25rem 1.25rem;
+  font-weight: 700;
+  background-color: #7f7fff;
+  color: #fff;
+  border-radius: 20px;
+  position: relative;
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+}
+
+section .header h2::before {
+  content: url(../assets/svg/ear.svg);
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width: 40px;
+}
+
+section .header h2::after {
+  content: url(../assets/svg/tail.svg);
+  position: absolute;
+  height: 20px;
+  width: 30px;
+  right: -15px;
+  bottom: 12.5px;
+}
+
+section .header a {
+  padding: 0.25rem 1.25rem;
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+  background-color: #7f7fff;
+  color: #fff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+}
+
+section .header a:hover {
+  opacity: .8;
+}
+
+section.about {
+  -webkit-box-shadow: 0 0 3px #7f7fff;
+          box-shadow: 0 0 3px #7f7fff;
+  background: white;
+  max-width: 600px;
+  width: calc(100% - 20px);
+  margin: 2rem auto 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+section.about .visual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.about .visual .icon {
+  height: 100px;
+  width: 100px;
+  background-image: url(../assets/img/icon_1000x1000.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 3px #7f7fff;
+          box-shadow: 0 0 3px #7f7fff;
+}
+
+section.about .visual .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0 10px 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 0 0 3px #7f7fff;
+          box-shadow: 0 0 3px #7f7fff;
+}
+
+section.about .visual .text::before {
+  content: "◀︎";
+  font-size: 150%;
+  position: absolute;
+  left: -20px;
+  top: 1rem;
+  color: #fff;
+  text-shadow: 0 0 3px #7f7fff;
+}
+
+section.about > p.text {
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+section.history .button_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.history .button_area div {
+  width: 50%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+  -webkit-transition: color ease .1s;
+  transition: color ease .1s;
+  cursor: pointer;
+  border-bottom: 1px solid #7f7fff;
+}
+
+section.history .button_area div.active {
+  border-bottom: 5px solid #7f7fff;
+  color: #7f7fff;
+}
+
+section.history .button_area div:hover {
+  color: #7f7fff;
+}
+
+section.history table {
+  width: 100%;
+}
+
+section.history table tr th {
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+  padding: 0.5em 0.75em;
+  border-bottom: 2px solid #ccc;
+  vertical-align: top;
+  vertical-align: middle;
+}
+
+section.history table tr td {
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+  padding: 0.5em 0.75em;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+section.history table tr:last-of-type td {
+  border: none;
+}
+
+section.makes .item {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-shadow: 0 0 3px #7f7fff;
+          box-shadow: 0 0 3px #7f7fff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color ease .3s;
+  transition: color ease .3s;
+}
+
+section.makes .item .thumb {
+  width: 200px;
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+section.makes .item .thumb img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+section.makes .item .text {
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.makes .item .text .title {
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+  font-weight: 700;
+  margin-bottom: .25rem;
+}
+
+section.makes .item .text .description {
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+section.makes .item:hover {
+  color: #7f7fff;
+}
+
+section.links .item_area a,
+section.contact .item_area a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em auto;
+  -webkit-box-shadow: 0 0 3px #7f7fff;
+          box-shadow: 0 0 3px #7f7fff;
+  -webkit-transition: -webkit-box-shadow .3s ease;
+  transition: -webkit-box-shadow .3s ease;
+  transition: box-shadow .3s ease;
+  transition: box-shadow .3s ease, -webkit-box-shadow .3s ease;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  font-size: 110%;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: opacity ease .3s;
+  transition: opacity ease .3s;
+}
+
+section.links .item_area a *,
+section.contact .item_area a * {
+  margin: 0 10px;
+}
+
+section.links .item_area a span,
+section.contact .item_area a span {
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+}
+
+section.links .item_area a:hover,
+section.contact .item_area a:hover {
+  opacity: .8;
+}
+
+section.links .item_area hr,
+section.contact .item_area hr {
+  margin: 1.5rem auto;
+  width: 90%;
+  border: none;
+  border-bottom: #7f7fff 2px dashed;
+}
+
+footer {
+  margin-top: 3rem;
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  background: #7f7fff;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+@media screen and (max-width: 635px) {
+  section.about .visual {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.about .visual .text {
+    margin: 10px 0;
+  }
+  section.about .visual .text::before {
+    display: none;
+  }
+}

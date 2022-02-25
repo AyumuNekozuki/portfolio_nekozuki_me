@@ -1,0 +1,333 @@
+$thema_1: #7f7fff;
+$thema_2: #EFEFFF;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: repeating-linear-gradient(-45deg,transparent,transparent 15px,$thema_2 0,$thema_2 30px);
+  border: 20px solid #7f7fff;
+
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+.fa-brands, .fab{
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400 !important;
+}
+.fa-solid, .fas{
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+
+a{
+  color: $thema_1;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+
+section{
+  box-shadow: 0 0 3px $thema_1;
+  background: white;
+  max-width: 600px;
+  width: calc(100% - 20px);
+  margin: 2rem auto 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+
+    h2{
+      display: inline-block;
+      margin: 0;
+      padding: 0.25rem 1.25rem;
+      font-weight: 700;
+      background-color: $thema_1;
+      color: #fff;
+      border-radius: 20px;
+      position: relative;
+      font-family: "M PLUS Rounded 1c",sans-serif;
+      transform: rotate(.03deg);
+
+      &::before{
+        content: url(../assets/svg/ear.svg);
+        position: absolute;
+        top: -20px;
+        height: 20px;
+        width: 40px;
+      }
+      &::after{
+        content: url(../assets/svg/tail.svg);
+        position: absolute;
+        height: 20px;
+        width: 30px;
+        right: -15px;
+        bottom: 12.5px;
+      }
+    }
+    a{
+      padding: 0.25rem 1.25rem;
+      font-family: "M PLUS Rounded 1c",sans-serif;
+      transform: rotate(.03deg);
+      background-color: #7f7fff;
+      color: #fff;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity .2s ease;
+
+      &:hover{
+        opacity: .8;
+      }
+    }
+  }
+}
+
+section.about{
+  box-shadow: 0 0 3px $thema_1;
+  background: white;
+  max-width: 600px;
+  width: calc(100% - 20px);
+  margin: 2rem auto 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+
+
+  .visual{
+    display: flex;
+    justify-content: center;
+
+    .icon{
+      height: 100px;
+      width: 100px;
+      background-image: url(../assets/img/icon_1000x1000.png);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: cover;
+      border-radius: 100%;
+      box-shadow: 0 0 3px $thema_1;
+    }
+    .text{
+      display: flex;
+      align-items: center;
+      font-family: "M PLUS Rounded 1c",sans-serif;
+      transform: rotate(.03deg);
+      font-size: 18px;
+      font-weight: 500;
+      margin: 10px 0 10px 2rem;
+      padding: 1rem;
+      border-radius: 10px;
+      position: relative;
+      text-align: center;
+      box-shadow: 0 0 3px $thema_1;
+
+      &::before{
+        content: "◀︎";
+        font-size: 150%;
+        position: absolute;
+        left: -20px;
+        top: 1rem;
+        color: #fff;
+        text-shadow: 0 0 3px $thema_1;
+      }
+    }
+  }
+
+  &>p.text{
+    font-family: "M PLUS Rounded 1c",sans-serif;
+    transform: rotate(.03deg);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
+
+section.history{
+  .button_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div{
+      width: 50%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 18px;
+
+      font-family: "M PLUS Rounded 1c",sans-serif;
+      transform: rotate(.03deg);
+
+      transition: color ease .1s;
+      cursor: pointer;
+
+      border-bottom: 1px solid $thema_1;
+
+      &.active{
+        border-bottom: 5px solid $thema_1;
+        color: $thema_1;
+      }
+      &:hover{
+        color: $thema_1;
+      }
+    }
+  }
+
+  table{
+    width: 100%;
+    tr{
+      th{
+        font-family: "M PLUS Rounded 1c",sans-serif;
+        transform: rotate(.03deg);
+        padding: 0.5em 0.75em;
+        border-bottom: 2px solid #ccc;
+        vertical-align: top;
+        vertical-align: middle;
+      }
+      td{
+        font-family: "M PLUS Rounded 1c",sans-serif;
+        transform: rotate(.03deg);
+        padding: 0.5em 0.75em;
+        vertical-align: top;
+        border-bottom: 1px solid #ccc;
+        vertical-align: middle;
+      }
+      
+      &:last-of-type{
+        td{
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+section.makes{
+  .item{
+    margin: 15px 0;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 3px $thema_1;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: color ease .3s;
+
+    .thumb{
+      width: 200px;
+      border-radius: 10px 0 0 10px;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      img{
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .text{
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .title{
+        font-family: "M PLUS Rounded 1c",sans-serif;
+        transform: rotate(.03deg);
+        font-weight: 700;
+        margin-bottom: .25rem;
+      }
+      .description{
+        font-family: "M PLUS Rounded 1c",sans-serif;
+        transform: rotate(.03deg);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.3;
+      }
+    }
+
+    &:hover{
+      color: $thema_1;
+
+    }
+  }
+}
+
+section.links,
+section.contact{
+  .item_area{
+    a{
+      width: 100%;
+      display: flex;
+      padding: 0.5rem;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1em auto;
+      box-shadow: 0 0 3px #7f7fff;
+      transition: box-shadow .3s ease;
+      transition: opacity .3s ease;
+      font-size: 110%;
+      color: #fff;
+      text-decoration: none;
+      transition: opacity ease .3s;
+      *{
+        margin: 0 10px;
+      }
+      span{
+        font-family: "M PLUS Rounded 1c",sans-serif;
+        transform: rotate(.03deg);
+      }
+
+
+      &:hover{
+        opacity: .8;
+      }
+    }
+    hr{
+      margin: 1.5rem auto;
+      width: 90%;
+      border: none;
+      border-bottom: #7f7fff 2px dashed;
+    }
+  }
+}
+
+footer{
+  margin-top: 3rem;
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  background: #7f7fff;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+@media screen and (max-width: 635px) {
+  section.about{
+    .visual{
+      flex-direction: column;
+      align-items: center;
+      
+      .text{
+        margin: 10px 0;
+        &::before{
+          display: none;
+        }
+      }
+    }
+  }
+}
